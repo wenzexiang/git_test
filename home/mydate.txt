@@ -1,0 +1,13 @@
+总用量 4
+drwx------. 17 centos centos  4096 1月  14 06:56 centos
+-rw-r--r--.  1 root   root       0 1月  14 06:59 mydate.txt
+drwxr-xr-x.  2 root   root       6 1月  13 10:46 tiger
+drwx------.  5 wzx    wzx      147 1月  13 10:58 wzx
+drwx------.  3 zwj    shaolin   78 1月  13 11:09 zwj
+总用量 8
+drwx------. 17 centos centos  4096 1月  14 06:56 centos
+lrwxrwxrwx.  1 root   root       5 1月  14 08:16 linkToRoot -> /root
+-rw-r--r--.  1 root   root     294 1月  14 06:59 mydate.txt
+drwxr-xr-x.  2 root   root       6 1月  13 10:46 tiger
+drwx------.  5 wzx    wzx      147 1月  13 10:58 wzx
+drwx------.  3 zwj    shaolin   78 1月  13 11:09 zwj

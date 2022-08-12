@@ -1,0 +1,33 @@
+git remote set-url origin  https://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@github.com/WZX2372872784/gittest.git
+git push origin main
+
+##解决问题
+fatal: No such remote ‘origin‘
+1.  在本地运行 git remote -v，没有显示任何地址，需要添加，而不是修改。运行：
+$ git remote add origin 远程url
+
+ 2. 查看 remote，可以看到 fetch 和 push 的链接:
+$ git remote -v
+origin	刚才添加的远程url (fetch)
+origin	刚才添加的远程url (push)
+
+3.  运行 push 命令，将本地代码推送上去服务端：
+$ git push --set-upstream origin master
+或者简写：
+$ git push -u origin master
+
+
+…or create a new repository on the command line
+echo "# git_test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/wenzexiang/git_test.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/wenzexiang/git_test.git
+git branch -M main
+git push -u origin main

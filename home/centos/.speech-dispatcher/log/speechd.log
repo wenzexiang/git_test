@@ -1,0 +1,105 @@
+[Mon Nov 30 07:59:03 2020 : 874614] speechd:   Speech Dispatcher Logging to file /home/centos/.speech-dispatcher/log//speechd.log
+[Mon Nov 30 07:59:03 2020 : 874700] speechd:  Initializing output module espeak with binary /usr/lib64/speech-dispatcher-modules/sd_espeak and configuration /etc/speech-dispatcher/modules//espeak.conf
+[Mon Nov 30 07:59:03 2020 : 874707] speechd:   Output module is logging to file /home/centos/.speech-dispatcher/log//espeak.log
+[Mon Nov 30 07:59:03 2020 : 875450] speechd:  Module espeak loaded.
+[Mon Nov 30 07:59:04 2020 : 56326] speechd: LINE here:|200-afrikaans af none|
+[Mon Nov 30 07:59:04 2020 : 56349] speechd: LINE here:|200-aragonese an none|
+[Mon Nov 30 07:59:04 2020 : 56354] speechd: LINE here:|200-bulgarian bg none|
+[Mon Nov 30 07:59:04 2020 : 56358] speechd: LINE here:|200-bosnian bs none|
+[Mon Nov 30 07:59:04 2020 : 56362] speechd: LINE here:|200-catalan ca none|
+[Mon Nov 30 07:59:04 2020 : 56366] speechd: LINE here:|200-czech cs none|
+[Mon Nov 30 07:59:04 2020 : 56371] speechd: LINE here:|200-welsh cy none|
+[Mon Nov 30 07:59:04 2020 : 56375] speechd: LINE here:|200-danish da none|
+[Mon Nov 30 07:59:04 2020 : 56378] speechd: LINE here:|200-german de none|
+[Mon Nov 30 07:59:04 2020 : 56382] speechd: LINE here:|200-greek el none|
+[Mon Nov 30 07:59:04 2020 : 56386] speechd: LINE here:|200-default en none|
+[Mon Nov 30 07:59:04 2020 : 56389] speechd: LINE here:|200-english en gb|
+[Mon Nov 30 07:59:04 2020 : 56393] speechd: LINE here:|200-english en gb|
+[Mon Nov 30 07:59:04 2020 : 56397] speechd: LINE here:|200-en-scottish en sc|
+[Mon Nov 30 07:59:04 2020 : 56400] speechd: LINE here:|200-english-north en uk-north|
+[Mon Nov 30 07:59:04 2020 : 56404] speechd: LINE here:|200-english_rp en uk-rp|
+[Mon Nov 30 07:59:04 2020 : 56408] speechd: LINE here:|200-english_wmids en uk-wmids|
+[Mon Nov 30 07:59:04 2020 : 56412] speechd: LINE here:|200-english-us en us|
+[Mon Nov 30 07:59:04 2020 : 56415] speechd: LINE here:|200-en-westindies en wi|
+[Mon Nov 30 07:59:04 2020 : 56419] speechd: LINE here:|200-esperanto eo none|
+[Mon Nov 30 07:59:04 2020 : 56423] speechd: LINE here:|200-spanish es none|
+[Mon Nov 30 07:59:04 2020 : 56427] speechd: LINE here:|200-spanish-latin-am es la|
+[Mon Nov 30 07:59:04 2020 : 56430] speechd: LINE here:|200-estonian et none|
+[Mon Nov 30 07:59:04 2020 : 56434] speechd: LINE here:|200-Farsi fa none|
+[Mon Nov 30 07:59:04 2020 : 56440] speechd: LINE here:|200-Farsi-Pinglish fa pin|
+[Mon Nov 30 07:59:04 2020 : 56444] speechd: LINE here:|200-finnish fi none|
+[Mon Nov 30 07:59:04 2020 : 56447] speechd: LINE here:|200-french-Belgium fr be|
+[Mon Nov 30 07:59:04 2020 : 56451] speechd: LINE here:|200-french fr fr|
+[Mon Nov 30 07:59:04 2020 : 56455] speechd: LINE here:|200-irish-gaeilge ga none|
+[Mon Nov 30 07:59:04 2020 : 56458] speechd: LINE here:|200-greek-ancient grc none|
+[Mon Nov 30 07:59:04 2020 : 56462] speechd: LINE here:|200-hindi hi none|
+[Mon Nov 30 07:59:04 2020 : 56466] speechd: LINE here:|200-croatian hr none|
+[Mon Nov 30 07:59:04 2020 : 56470] speechd: LINE here:|200-hungarian hu none|
+[Mon Nov 30 07:59:04 2020 : 56473] speechd: LINE here:|200-armenian hy none|
+[Mon Nov 30 07:59:04 2020 : 56477] speechd: LINE here:|200-armenian-west hy west|
+[Mon Nov 30 07:59:04 2020 : 56481] speechd: LINE here:|200-indonesian id none|
+[Mon Nov 30 07:59:04 2020 : 56484] speechd: LINE here:|200-icelandic is none|
+[Mon Nov 30 07:59:04 2020 : 56488] speechd: LINE here:|200-italian it none|
+[Mon Nov 30 07:59:04 2020 : 56492] speechd: LINE here:|200-lojban jbo none|
+[Mon Nov 30 07:59:04 2020 : 56495] speechd: LINE here:|200-georgian ka none|
+[Mon Nov 30 07:59:04 2020 : 56499] speechd: LINE here:|200-kannada kn none|
+[Mon Nov 30 07:59:04 2020 : 56503] speechd: LINE here:|200-kurdish ku none|
+[Mon Nov 30 07:59:04 2020 : 56506] speechd: LINE here:|200-latin la none|
+[Mon Nov 30 07:59:04 2020 : 56510] speechd: LINE here:|200-lithuanian lt none|
+[Mon Nov 30 07:59:04 2020 : 56514] speechd: LINE here:|200-latvian lv none|
+[Mon Nov 30 07:59:04 2020 : 56517] speechd: LINE here:|200-macedonian mk none|
+[Mon Nov 30 07:59:04 2020 : 56521] speechd: LINE here:|200-malayalam ml none|
+[Mon Nov 30 07:59:04 2020 : 56537] speechd: LINE here:|200-malay ms none|
+[Mon Nov 30 07:59:04 2020 : 56541] speechd: LINE here:|200-nepali ne none|
+[Mon Nov 30 07:59:04 2020 : 56545] speechd: LINE here:|200-dutch nl none|
+[Mon Nov 30 07:59:04 2020 : 56549] speechd: LINE here:|200-norwegian no none|
+[Mon Nov 30 07:59:04 2020 : 56553] speechd: LINE here:|200-punjabi pa none|
+[Mon Nov 30 07:59:04 2020 : 56557] speechd: LINE here:|200-polish pl none|
+[Mon Nov 30 07:59:04 2020 : 56560] speechd: LINE here:|200-brazil pt br|
+[Mon Nov 30 07:59:04 2020 : 56564] speechd: LINE here:|200-portugal pt pt|
+[Mon Nov 30 07:59:04 2020 : 56568] speechd: LINE here:|200-romanian ro none|
+[Mon Nov 30 07:59:04 2020 : 56573] speechd: LINE here:|200-russian ru none|
+[Mon Nov 30 07:59:04 2020 : 56577] speechd: LINE here:|200-slovak sk none|
+[Mon Nov 30 07:59:04 2020 : 56580] speechd: LINE here:|200-albanian sq none|
+[Mon Nov 30 07:59:04 2020 : 56584] speechd: LINE here:|200-serbian sr none|
+[Mon Nov 30 07:59:04 2020 : 56588] speechd: LINE here:|200-swedish sv none|
+[Mon Nov 30 07:59:04 2020 : 56591] speechd: LINE here:|200-swahili-test sw none|
+[Mon Nov 30 07:59:04 2020 : 56595] speechd: LINE here:|200-tamil ta none|
+[Mon Nov 30 07:59:04 2020 : 56599] speechd: LINE here:|200-turkish tr none|
+[Mon Nov 30 07:59:04 2020 : 56603] speechd: LINE here:|200-vietnam vi none|
+[Mon Nov 30 07:59:04 2020 : 56606] speechd: LINE here:|200-vietnam_hue vi hue|
+[Mon Nov 30 07:59:04 2020 : 56610] speechd: LINE here:|200-vietnam_sgn vi sgn|
+[Mon Nov 30 07:59:04 2020 : 56614] speechd: LINE here:|200-Mandarin zh none|
+[Mon Nov 30 07:59:04 2020 : 56618] speechd: LINE here:|200-cantonese zh yue|
+[Mon Nov 30 07:59:04 2020 : 56621] speechd: LINE here:|200 OK VOICE LIST SENT|
+[Mon Nov 30 07:59:04 2020 : 56643] speechd:  Module espeak started sucessfully with message: 
+---------------
+Espeak: Initialized successfully.
+---------------
+
+[Mon Nov 30 07:59:04 2020 : 56799] speechd:  Initializing output module festival with binary /usr/lib64/speech-dispatcher-modules/sd_festival and configuration /etc/speech-dispatcher/modules//festival.conf
+[Mon Nov 30 07:59:04 2020 : 56804] speechd:   Output module is logging to file /home/centos/.speech-dispatcher/log//festival.log
+[Mon Nov 30 07:59:04 2020 : 57124] speechd:  Module festival loaded.
+[Mon Nov 30 07:59:04 2020 : 69014] speechd:  Error: Broken pipe to module.
+[Mon Nov 30 07:59:04 2020 : 69045] speechd:  Output module terminated abnormally, probably crashed.
+[Mon Nov 30 07:59:04 2020 : 69058] speechd: ERROR: Can't initialize audio in output module, see reason above.
+[Mon Nov 30 07:59:04 2020 : 69069] speechd:   Couldn't load specified output module
+[Mon Nov 30 07:59:04 2020 : 69194] speechd:  Initializing output module dummy with binary /usr/lib64/speech-dispatcher-modules/sd_dummy and configuration (null)
+[Mon Nov 30 07:59:04 2020 : 69199] speechd:   Output module is logging to file /home/centos/.speech-dispatcher/log//dummy.log
+[Mon Nov 30 07:59:04 2020 : 69457] speechd:  Module dummy loaded.
+[Mon Nov 30 07:59:04 2020 : 75574] speechd: LINE here:|304 CANT LIST VOICES|
+[Mon Nov 30 07:59:04 2020 : 75601] speechd:  Module dummy started sucessfully with message: 
+---------------
+Everything ok so far.
+---------------
+
+[Mon Nov 30 07:59:04 2020 : 79031] speechd:  Configuration has been read from "/etc/speech-dispatcher/speechd.conf"
+[Mon Nov 30 07:59:04 2020 : 79190] speechd:   Speech Dispatcher Logging to file /home/centos/.speech-dispatcher/log//speechd.log
+[Mon Nov 30 07:59:04 2020 : 79311] speechd:   Speech Dispatcher started with 2 output modules
+[Mon Nov 30 07:59:04 2020 : 82610] speechd: Speech Dispatcher started and waiting for clients ...
+[Mon Nov 30 07:59:32 2020 : 298433] speechd: write() error: Bad file descriptor
+[Mon Nov 30 07:59:32 2020 : 298451] speechd:  ERROR: Can't report index mark!
+[Mon Nov 30 07:59:32 2020 : 350162] speechd: write() error: Bad file descriptor
+[Mon Nov 30 07:59:32 2020 : 350182] speechd:  ERROR: Can't report index mark!
+[Mon Nov 30 07:59:33 2020 : 752934] speechd: write() error: Bad file descriptor
+[Mon Nov 30 07:59:33 2020 : 752952] speechd:  ERROR: Can't report index mark!

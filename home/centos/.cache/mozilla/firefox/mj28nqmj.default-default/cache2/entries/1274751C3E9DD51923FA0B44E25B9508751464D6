@@ -1,0 +1,350 @@
+
+
+
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>天翼校园网</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="assets/css/amazeui.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+   <script type="text/javascript">
+   	function getQueryString(name) { 
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+		var r = location.search.substr(1).match(reg); 
+		if (r != null) return unescape(decodeURI(r[2])); return null; 
+	}
+   
+   	function addResetUrl() {
+		window.open("/qs/reset.jsp?wlanuserip=" + getQueryString("wlanuserip") + "&wlanacip=" + getQueryString("wlanacip") );
+	}
+   	
+  	function loadan() {
+  		$.ajax({
+  			type : 'POST',
+  			url : '/announcement.do?method=json',
+  			cache : false,
+  			dataType : 'json',
+  			success : function(data, textStatus) {
+  				if(data.anns == null || data.anns.length == 0) {
+  					$("#an_content").append("暂时没有公告内容");
+  				} else {
+  					$.each(data.anns, function(i, row) {
+  						$("#an_content").append("<a href='" + row.url + "' target='_blank'>"  + (i+1) + "、"+ row.title + "</a>");
+  	  					$("#an_content").append("<br/>");
+  	  				});
+  				}
+  				
+  				if(data.moreurl != null) {
+  					$("#more").append("more>>");
+  					$("#more").attr("href",data.moreurl); 
+  				}
+  			}
+  		});
+
+        $.ajax({
+            type : 'POST',
+            url : '/advertisement.do?method=json&schoolid=' + '1028',
+            cache : false,
+            dataType : 'json',
+            success : function(data, textStatus) {
+              if(data.size > 0) {
+                    $("#head_logo").attr("src", data.ads[0].relativePath + "?time=" + new Date().getTime());
+              }
+            }
+        });
+
+    }
+  </script>
+  <style type="text/css">
+  .banner_02
+{
+	width:100%;
+	height:400px;
+	background-image: url(assets/images/banner02.png);
+	background-repeat: no-repeat;
+	background-color: #a2d3c0;
+	overflow:hidden;
+}
+
+.dl{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 220px;
+	overflow:hidden;
+}
+.dl_2{
+	float: right;
+	margin-right: 20px;
+	overflow:hidden;
+}
+.dl_2_d{
+	margin-bottom: 3px;
+}
+  </style>
+  <script type="text/javascript" src="/js/base64.js"></script>
+  <script type="text/javascript" src="/js/login.js?version=2017"></script>
+</head>
+<body onload="loadan();initData();">
+
+<!-- 页面内容 开发时删除 -->
+<div class="am-g am-g-fixed">
+  <div class="am-u-sm-12">
+    <img id="head_logo" src="assets/images/logo.jpg" class="am-img-responsive">
+  </div>
+</div>
+<div class="am-g am-g-fixed am-margin-top">
+	<div class="am-u-sm-12 am-u-md-8" >
+	<div class="am-container">
+		<div class="am-u-sm-6 am-u-md-3" style="padding: 2px;">
+			<button type="button" class="am-btn  am-btn-primary am-btn-block am-radius" onclick="window.open('http://zsteduapp.10000.gd.cn/index.html?schoolid=1028')">客户端下载</button>	
+		</div>
+		<div class="am-u-sm-6 am-u-md-3" style="padding: 2px;">
+			<button type="button" class="am-btn  am-btn-success am-btn-block am-radius" onclick="window.open('http://zsteduapp.10000.gd.cn/More/QuickStartGuide/index.html?schoolid=1028')">快速入门</button>	
+		</div>
+		<div class="am-u-sm-6 am-u-md-3" style="padding: 2px;">
+			<button type="button" class="am-btn  am-btn-secondary am-btn-block am-radius" onclick="window.open('http://zsteduapp.10000.gd.cn/More/Faultguideline/01.html?schoolid=1028')">故障指引</button>	
+		</div>
+		<div class="am-u-sm-6 am-u-md-3" style="padding: 2px;">
+			<button type="button" class="am-btn  am-btn-warning am-btn-block am-radius" onclick="window.open('http://maintain.10000.gd.cn:32003/ENSelfService/?schoolid=1028')">用户自助</button>
+		</div>
+	</div>
+	<div style="margin-top:10px;">
+		<!-- 
+		<img src="assets/images/banner01.png" class="am-img-responsive">
+		 -->
+	</div>
+<div class="banner_02  am-show-lg-only">
+<!-- 
+<div class="dl"><div class="dl_2"><img src="app/images/ios_2.png" width="150" height="170" alt=""/></div>
+    <div class="dl_2"><img src="app/images/android_2.png" width="150" height="170" alt=""/></div>
+    <div class="dl_2">
+      <div class="dl_2_d"><a href="http://zsteduapp.10000.gd.cn/EsurfingClient/GetClient.aspx?areaCode=gd&amp;osType=windows&amp;dialType=portal
+" target="_blank"><img src="app/images/win.png" width="150" height="40" alt=""/></a></div>
+<div class="dl_2_d"><a href="http://zsteduapp.10000.gd.cn/EsurfingClient/GetClient.aspx?areaCode=gd&amp;osType=androidPhone&amp;dialType=portal" target="_blank"><img src="app/images/android.png" width="150" height="40" alt=""/></a></div>
+<div class="dl_2_d"><a href="http://zsteduapp.10000.gd.cn/EsurfingClient/GetClient.aspx?areaCode=gd&amp;osType=iOSPhone&amp;dialType=portal
+" target="_blank"><img src="app/images/ios.png" width="150" height="40" alt=""/></a></div>
+<div class="dl_2_d"><a href="http://zsteduapp.10000.gd.cn/EsurfingClient/GetClient.aspx?areaCode=gd&amp;osType=macos&amp;dialType=portal
+" target="_blank"><img src="app/images/mac.png" width="150" height="40" alt=""/></a></div>
+    </div></div>
+     -->
+      <div style="margin-top:210px;margin-left: 100px;"><iframe src="http://zsteduapp.10000.gd.cn/index_yx.html?schoolid=1028" width="540px" height="200px"></iframe></div>
+    </div>
+  </div>
+  <div class="am-u-sm-12 am-u-md-4">
+    <div class="am-panel am-panel-primary">
+		<header class="am-panel-hd">
+			<h3 class="am-panel-title"><span>学校公告</span> <a id="more" target="_blank" style="float: right;" href="javascript:void"></a></h3>
+		</header>
+	<div class="am-panel-bd" id="an_content">
+	</div>
+   </div>
+  </div>
+  <div class="am-u-sm-12 am-u-md-4">
+    <div class="am-panel am-panel-primary">
+		<header class="am-panel-hd">
+			<h3 class="am-panel-title">校园宽带用户登陆区域</h3>
+		</header>
+	<div id="login" class="am-panel-bd" >
+		<form class="am-form am-form-horizontal">
+  <div class="am-form-group">
+    <label for="doc-ipt-3" class="am-u-sm-3 am-form-label">帐号</label>
+    <div class="am-u-sm-9">
+      <input  type="text" id="username" placeholder="输入你的登录帐号">
+    </div>
+  </div>
+
+  <div class="am-form-group">
+    <label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label">密码</label>
+    <div class="am-u-sm-9">
+      <input type="password" id="password"placeholder="输入你的登录密码">
+    </div>
+  </div>
+  
+  <div class="am-form-group">
+    <label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label">验证码</label>
+    <div class="am-u-sm-6 am-u-md-6 am-u-code-6">
+     <input type="text" id="code" >
+    </div>
+	<div class="am-u-sm-3 am-u-md-3 am-u-code-3">
+      <img id="image_code" src="/common/image_code.jsp?time=1606713342054" class="am-img-responsive" onclick="changeCode()">
+    </div>
+  </div>
+	<input id="wlanuserip" type="hidden" value="172.25.88.76" />
+	<input id="wlanacip" type="hidden" value="183.56.6.45" />
+  <div class="am-form-group">
+    <div class="am-u-sm-offset-3 am-u-sm-9">
+      <div class="checkbox">
+        <label>
+           <input id="keep" type="checkbox" checked /> 保存账户
+        </label>
+		<label>
+          | <a href="javascript:addResetUrl()" >忘记密码</a>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="am-form-group">
+    <div class="am-u-sm-12">
+      <button type="button" class="am-btn am-btn-default am-btn-block am-btn-success am-radius"  onclick="login()">提交登入</button>
+    </div>
+	</div>
+	<div class="am-form-group">
+
+		<div class="am-u-sm-12" style="text-indent: 2em;">
+	  原校园宽带用户只需开通一号多终端功能，下载天翼校园客户端，即可畅享手机、电脑随心连。具体开通方式请咨询学校营业厅或网管
+    </div>
+  </div>
+</form>
+
+	</div>
+	
+	<div id="success" class="am-panel-bd" style="display: none">
+		<form class="am-form am-form-horizontal">
+   <div class="am-form-group" align="center">
+    欢迎是使用天翼校园网络
+  </div>
+ <div class="am-form-group" align="center">
+    登录成功
+  </div>
+  
+
+  <div class="am-form-group">
+    <div class="am-u-sm-6">
+      <button type="button" class="am-btn am-btn-default am-btn-block am-btn-success am-radius"  onclick="logout()">提交下线</button>
+    </div>
+    
+     <div class="am-u-sm-6">
+      <button type="button" class="am-btn am-btn-default am-btn-block am-btn-success am-radius"  onclick="javascript:window.open('http://maintain.10000.gd.cn:32003/ENSelfService/','_blank');">自助服务</button>
+    </div>
+	</div>
+	<div class="am-form-group">
+
+		<div class="am-u-sm-12" style="text-indent: 2em;">
+	  原校园宽带用户只需开通一号多终端功能，下载天翼校园客户端，即可畅享手机、电脑随心连。具体开通方式请咨询学校营业厅或网管
+    </div>
+  </div>
+</form>
+
+	</div>
+	
+	<div id="modifypassword" class="am-panel-bd" style="display: none">
+		<form class="am-form am-form-horizontal">
+  <div class="am-form-group">
+    <label for="doc-ipt-3" class="am-u-sm-3 am-form-label">帐号</label>
+    <div class="am-u-sm-9">
+      <input  type="text" id="m_username" placeholder="输入你的登录帐号">
+    </div>
+  </div>
+
+   <div class="am-form-group">
+    <label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label">旧密码</label>
+    <div class="am-u-sm-9">
+      <input type="password" id="m_oldpassword" placeholder="输入你的旧登录密码">
+    </div>
+  </div>
+  
+  <div class="am-form-group">
+    <label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label">新密码</label>
+    <div class="am-u-sm-9">
+      <input type="password" id="m_password" placeholder="输入你的新登录密码">
+    </div>
+  </div>
+  
+    <div class="am-form-group">
+    <label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label">确认密码</label>
+    <div class="am-u-sm-9">
+      <input type="password" id="c_password" placeholder="再次输入你的新登录密码">
+    </div>
+  </div>
+   <div class="am-form-group">
+    <label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label">验证码</label>
+    <div class="am-u-sm-6 am-u-code-6">
+      <input type="text" id="c_code" placeholder="输入验证码">
+    </div>
+    <div class="am-u-sm-3 am-u-md-3 am-u-code-3">
+      <img id="m_code" src="/common/m_code.jsp?time=1606713342054" class="am-img-responsive" onclick="changeMCode()">
+    </div>
+  </div>
+
+  <div class="am-form-group">
+    <div class="am-u-sm-6">
+      <button type="button" class="am-btn am-btn-default am-btn-block am-btn-success am-radius" id="passwdBtn" onclick="modifyPassword()">提交</button>
+    </div>
+    <div class="am-u-sm-6">
+      <button type="button" class="am-btn am-btn-default am-btn-block am-btn-success am-radius" id="backBtn"  onclick="window.location.reload();">返回</button>
+    </div>
+	</div>
+	<div class="am-form-group">
+
+		<div class="am-u-sm-12" style="text-indent: 2em;">
+	 原校园宽带用户只需开通一号多终端功能，下载天翼校园客户端，即可畅享手机、电脑随心连。具体开通方式请咨询学校营业厅或网管
+    </div>
+  </div>
+</form>
+
+	</div>
+	
+	
+   </div>
+  </div>
+</div>
+
+
+<!-- 以上页面内容 开发时删除 -->
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/polyfill/rem.min.js"></script>
+<script src="assets/js/polyfill/respond.min.js"></script>
+<script src="assets/js/amazeui.legacy.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<!--<![endif]-->
+
+</body>
+</html>
+�6�T      _��_��Ba�	_��   [    :http://enet.10000.gd.cn:10001/qs/index_gz.jsp?wlanacip=183.56.6.45&wlanuserip=172.25.88.76 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 30 Nov 2020 05:15:42 GMT
+Content-Type: text/html; charset=utf-8
+ original-response-headers Date: Mon, 30 Nov 2020 05:15:42 GMT
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+ ctid 1 uncompressed-len 0 net-response-time-onstart 155 net-response-time-onstop 211 predictor::resource-count 10 predictor::http://enet.10000.gd.cn:10001/qs/assets/css/amazeui.css 1,1,1606742176,4097 predictor::http://enet.10000.gd.cn:10001/qs/assets/css/custom.css 1,1,1606742176,4097 predictor::http://enet.10000.gd.cn:10001/js/base64.js 1,1,1606742176,4097 predictor::http://enet.10000.gd.cn:10001/js/login.js?version=2017 1,1,1606742176,4096 predictor::http://enet.10000.gd.cn:10001/qs/assets/images/logo.jpg 1,1,1606742176,4097 predictor::http://enet.10000.gd.cn:10001/common/image_code.jsp?time=1606713342054 1,1,1606742176,4096 predictor::http://enet.10000.gd.cn:10001/common/m_code.jsp?time=1606713342054 1,1,1606742176,4096 predictor::http://enet.10000.gd.cn:10001/qs/assets/js/jquery.min.js 1,1,1606742176,4097 predictor::http://enet.10000.gd.cn:10001/qs/assets/js/amazeui.min.js 1,1,1606742176,4097 predictor::http://enet.10000.gd.cn:10001/qs/assets/images/banner02.png 1,1,1606742176,4096   4

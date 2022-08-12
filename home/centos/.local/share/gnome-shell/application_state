@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="1" last-seen="1610531114"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="5" last-seen="1610537009"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="91" last-seen="1610537525"/>
+    <application id="org.gnome.clocks.desktop" open-window-count="0" score="3" last-seen="1610536922"/>
+    <application id="eog.desktop" open-window-count="0" score="0" last-seen="1610537523"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="0" last-seen="1610529852"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="0" score="907" last-seen="1610630409"/>
+    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="1" last-seen="1610531100"/>
+    <application id="evince.desktop" open-window-count="0" score="97" last-seen="1610537505"/>
+    <application id="org.gnome.Software.desktop" open-window-count="0" score="1" last-seen="1610530929"/>
+  </context>
+</application-state>
